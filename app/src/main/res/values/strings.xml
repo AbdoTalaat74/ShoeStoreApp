@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_account">Sign up</string>
+    <string name="welcome_1">Welcome to our Shoes Store!</string>
+    <string name="welcome_2">Here you can sell your own shoes at the best prices.</string>
+    <string name="instruction_1"> </string>
+    <string name="instruction_2"></string>
+    <string name="next">Next</string>
+</resources>
