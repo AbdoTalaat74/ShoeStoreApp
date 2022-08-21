@@ -3,7 +3,9 @@
 <!--In this design, there will be components below each other
     and components next to each other,
     and this is a complex design,
-    so the most appropriate layout is ConstraintLayout -->
+    so the most appropriate layout is ConstraintLayout
+     and i used constraint layout to not use nested
+     linear layout-->
 
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"

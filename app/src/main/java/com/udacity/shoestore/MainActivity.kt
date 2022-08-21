@@ -2,18 +2,12 @@ package com.udacity.shoestore
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.View
-import android.widget.Toolbar
+import androidx.appcompat.widget.Toolbar
 import androidx.navigation.NavController
-import androidx.navigation.NavGraph
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.NavigationUI
-import kotlinx.android.synthetic.main.activity_main.*
 import timber.log.Timber
-import androidx.appcompat.widget.*
 import androidx.navigation.ui.setupWithNavController
 
 class MainActivity : AppCompatActivity() {
@@ -23,17 +17,13 @@ class MainActivity : AppCompatActivity() {
         Timber.plant(Timber.DebugTree())
 
         setSupportActionBar(findViewById(R.id.toolbar))
+//        val navController = this.findNavController(R.id.nav_host_fragment_container)
+        val navHostFragment = supportFragmentManager.
+        findFragmentById(R.id.nav_host_fragment_container) as NavHostFragment
+        val navController = navHostFragment.navController
+        val configuration = AppBarConfiguration(navController.graph)
 
-//        val navController = findNavController(R.id.nav_host_fragment_container)
-//        val configuration = AppBarConfiguration(navController.graph)
-//
-//        findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
-//            .setupWithNavController(navController,configuration)
+        findViewById<Toolbar>(R.id.toolbar).setupWithNavController(navController,configuration)
     }
-
-//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-//        menuInflater.inflate(R.menu.main_menu,menu)
-//        return true
-//    }
 
 }
