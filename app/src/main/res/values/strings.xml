@@ -9,4 +9,6 @@
     <string name="instruction_1"> </string>
     <string name="instruction_2"></string>
     <string name="next">Next</string>
+    <string name="add_Shoe">Add Shoe</string>
+    <string name="instructions">logout</string>
 </resources>
