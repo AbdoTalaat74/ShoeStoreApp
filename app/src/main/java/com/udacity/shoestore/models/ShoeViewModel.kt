@@ -10,8 +10,7 @@ class ShoeViewMode: ViewModel() {
     val shoeList: LiveData<MutableList<Shoe>>
         get() = _shoeList
 
-
-
-
-
+    fun newShow(shoe: Shoe){
+        _shoeList.value?.add(shoe)
+    }
 }

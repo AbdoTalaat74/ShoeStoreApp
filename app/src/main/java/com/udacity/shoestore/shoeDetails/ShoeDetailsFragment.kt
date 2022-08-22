@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
@@ -16,7 +17,8 @@ import com.udacity.shoestore.models.ShoeViewMode
 
 
 class ShoeDetailsFragment : Fragment() {
-    lateinit var shoeViewMode: ShoeViewMode
+//    lateinit var shoeViewMode: ShoeViewMode
+    private val viewMode:ShoeViewMode by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -26,21 +28,14 @@ class ShoeDetailsFragment : Fragment() {
             inflater,
             R.layout.shoe_details_fragment, container, false
         )
+        binding.shoe = Shoe("NA", 0.0, "NA", "NA")
 
-        var isDonePressed = false
 
-        shoeViewMode = ViewModelProvider(this).get(ShoeViewMode::class.java)
+//        shoeViewMode = ViewModelProvider(this).get(ShoeViewMode::class.java)
 
-        binding.detailsDoneBtn.setOnClickListener { view: View ->
+        binding.detailsDoneBtn.setOnClickListener {
 
-            val shoeName = binding.shoeNameEditText.text.toString()
-            val shoeSize = binding.shoeSizeEditText.text.toString() as Double
-            val shoeCompany = binding.companyEditText.text.toString()
-            val shoeDescription = binding.descriptionEditText.text.toString()
-
-            val shoe = Shoe(shoeName, shoeSize, shoeCompany, shoeDescription)
-
-            shoeViewMode.shoeList.value?.add(shoe)
+            viewMode.newShow(binding.shoe)
 
         }
 
