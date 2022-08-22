@@ -33,16 +33,14 @@ class ShoeDetailsFragment : Fragment() {
 
 //        shoeViewMode = ViewModelProvider(this).get(ShoeViewMode::class.java)
 
-        binding.detailsDoneBtn.setOnClickListener {
+        binding.detailsDoneBtn.setOnClickListener { view: View ->
 
-            viewMode.newShow(binding.shoe)
-
+            viewMode.newShow(binding.shoe as Shoe )
+            Navigation.findNavController(view).navigateUp()
         }
 
         binding.detailsCancelBtn.setOnClickListener { view: View ->
-            Navigation.findNavController(view)
-                .navigate(R.id.action_shoeDetailsFragment_to_showListFragment)
-
+            Navigation.findNavController(view).navigateUp()
         }
 
 

@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-it is a complex layout it has floatButton and scroll view,
-There is no way to show the floatButton in this position
-except using constraint layout.
--->
+
+
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+    <!--
+    it is a complex layout it has floatButton and scroll view,
+    There is no way to show the floatButton in this position
+    except using constraint layout.
+    -->
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floating_btn"
@@ -26,6 +29,7 @@ except using constraint layout.
         app:maxImageSize="35sp" />
 
     <ScrollView
+        android:layout_marginTop="60dp"
         android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -36,9 +40,12 @@ except using constraint layout.
         tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
+            android:id="@+id/shoe_list_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical">
+
+        </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

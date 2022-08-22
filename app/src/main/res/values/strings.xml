@@ -5,15 +5,16 @@
     <string name="login">Login</string>
     <string name="create_account">Sign up</string>
     <string name="welcome_1">Welcome to our Shoes Store!</string>
-    <string name="welcome_2">Here you can sell your own shoes at the best prices.</string>
-    <string name="instruction_1"> </string>
-    <string name="instruction_2"></string>
+    <string name="welcome_2">The best Store in MiddleEast.</string>
+    <string name="instruction_1">Make sure that you enter the correct shoe data</string>
+    <string name="instruction_2">Press Next </string>
     <string name="next">Next</string>
     <string name="add_Shoe">Add Shoe</string>
-    <string name="instructions">logout</string>
     <string name="log_out">Log out</string>
-    <string name="shoe_name">shoeName</string>
-    <string name="shoe_size">ShoeSize</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="shoe_size">Shoe Size</string>
     <string name="done">Done</string>
     <string name="cancel">Cancel</string>
+    <string name="company">Company</string>
+    <string name="description">Description</string>
 </resources>

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- This design consists of two
- textsViews below each other so it would be
- better to use Linear Layout -->
+
 
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- This design consists of two
+ textsViews below each other so it would be
+ better to use Linear Layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,16 +17,15 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/instruction_1"
+            android:text="@string/instruction_2"
             android:textAlignment="center"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/welcome_2"
+            android:text="@string/instruction_1"
             android:textAlignment="center"
             android:textSize="20sp" />
 

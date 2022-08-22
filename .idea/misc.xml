@@ -3,12 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/dell/AndroidStudioProjects/ShoeStoreApp/app/src/main/res/layout/login_fragment.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/dell/AndroidStudioProjects/ShoeStoreApp/app/src/main/res/layout/shoe_details_fragment.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/dell/AndroidStudioProjects/ShoeStoreApp/app/src/main/res/layout/shoe_list_fragment.xml" value="0.358695652173913" />
+        <entry key="..\:/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/drawable/edit_text_background.xml" value="0.18" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/activity_main.xml" value="0.16485507246376813" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/instruction_fragment.xml" value="0.16485507246376813" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/login_fragment.xml" value="0.4" />
+        <entry key="..\:/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/shoe_card.xml" value="0.33" />
+        <entry key="..\:/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/shoe_details_fragment.xml" value="0.33" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/shoe_list_fragment.xml" value="0.25" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/welcome_fragment.xml" value="0.33" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/menu/logout_menu.xml" value="0.2" />

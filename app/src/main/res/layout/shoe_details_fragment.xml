@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
@@ -10,6 +11,13 @@
             type="com.udacity.shoestore.models.Shoe" />
     </data>
 
+    <!--In this design, there will be components below each other
+    and components next to each other,
+    and this is a complex design,
+    so the most appropriate layout is ConstraintLayout
+     and i used constraint layout to not use nested
+     linear layout-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -18,19 +26,18 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="208dp"
             android:text="@string/shoe_name"
             android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/shoe_name_edit_text"
             app:layout_constraintEnd_toStartOf="@+id/shoe_name_edit_text"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/shoe_name_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="92dp"
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="textAutoComplete"
@@ -45,13 +52,12 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
             android:text="@string/shoe_size"
             android:textSize="20sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/shoe_size_edit_text"
             app:layout_constraintEnd_toEndOf="@+id/textView4"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="@+id/textView4" />
 
         <EditText
             android:id="@+id/shoe_size_edit_text"
@@ -59,6 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:ems="3"
+            android:textAlignment="center"
             android:inputType="number"
 
             android:text="@={shoe.size+``}"
@@ -72,7 +79,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Company"
+            android:text="@string/company"
             android:textSize="20sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/company_edit_text"
             app:layout_constraintEnd_toEndOf="@+id/textView6"
@@ -98,7 +105,7 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Description"
+            android:text="@string/description"
             android:textSize="20sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/description_edit_text"
             app:layout_constraintEnd_toEndOf="@+id/textView"
