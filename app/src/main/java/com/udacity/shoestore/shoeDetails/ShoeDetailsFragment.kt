@@ -44,21 +44,11 @@ class ShoeDetailsFragment : Fragment() {
 
         }
 
-        shoeViewMode.isShoeListEmpty.observe(viewLifecycleOwner, Observer { isEmpty ->
-            if (isEmpty) {
-
-                val action = ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToShowListFragment(shoeViewMode.shoeList.value)
-            }
-        })
-
         binding.detailsCancelBtn.setOnClickListener { view: View ->
             Navigation.findNavController(view)
                 .navigate(R.id.action_shoeDetailsFragment_to_showListFragment)
 
         }
-
-
-
 
 
         return binding.root
