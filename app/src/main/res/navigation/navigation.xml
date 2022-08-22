@@ -6,7 +6,7 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.udacity.shoestore.login.LoginFragment"
-        android:label="LoginFragment" >
+        android:label="LoginFragment">
         <action
             android:id="@+id/action_loginFragment_to_welcomeFragment"
             app:destination="@id/welcomeFragment" />
@@ -14,7 +14,7 @@
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.udacity.shoestore.welcome.WelcomeFragment"
-        android:label="WelcomeFragment" >
+        android:label="WelcomeFragment">
         <action
             android:id="@+id/action_welcomeFragment_to_instructionsFragment"
             app:destination="@id/instructionsFragment" />
@@ -22,17 +22,28 @@
     <fragment
         android:id="@+id/instructionsFragment"
         android:name="com.udacity.shoestore.instructions.InstructionsFragment"
-        android:label="InstructionsFragment" >
+        android:label="InstructionsFragment">
         <action
             android:id="@+id/action_instructionsFragment_to_showListFragment"
             app:destination="@id/showListFragment" />
     </fragment>
     <fragment
         android:id="@+id/showListFragment"
-        android:name="com.udacity.shoestore.shoeList.ShowListFragment"
-        android:label="ShowListFragment" >
+        android:name="com.udacity.shoestore.shoeList.ShoeListFragment"
+        android:label="ShowListFragment">
         <action
             android:id="@+id/action_showListFragment_to_loginFragment2"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_showListFragment_to_shoeDetailsFragment"
+            app:destination="@id/shoeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeDetailsFragment"
+        android:name="com.udacity.shoestore.shoeDetails.ShoeDetailsFragment"
+        android:label="ShoeDetailsFragment">
+        <action
+            android:id="@+id/action_shoeDetailsFragment_to_showListFragment"
+            app:destination="@id/showListFragment" />
     </fragment>
 </navigation>

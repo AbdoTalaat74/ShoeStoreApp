@@ -12,4 +12,8 @@
     <string name="add_Shoe">Add Shoe</string>
     <string name="instructions">logout</string>
     <string name="log_out">Log out</string>
+    <string name="shoe_name">shoeName</string>
+    <string name="shoe_size">ShoeSize</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
 </resources>
